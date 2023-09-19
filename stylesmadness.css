@@ -1,0 +1,172 @@
+body {
+    background-color: black; /* Establece el fondo en negro */
+    font-family:'Orbitron', sans-serif; /* Utiliza una fuente gótica */
+    color: white; /* Configura el color del texto en blanco */
+}
+
+/* Estilo para la frase en movimiento */
+.moving-text {
+    width: 100%; /* Ajusta el ancho del contenedor según tus preferencias */
+    text-align: center; /* Centra el texto horizontalmente */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que se salga del contenedor */
+}
+
+/* Estilo para la frase en movimiento animada */
+.moving-text p {
+    font-size: 24px; /* Tamaño de fuente del texto */
+    position: relative; /* Permite posicionar el texto de manera relativa */
+    animation: moveText 18s linear infinite reverse;; /* Aplica la animación "moveText" durante 10 segundos en bucle */
+}
+
+/* Definición de la animación */
+@keyframes moveText {
+    0% {
+        left: 100%; /* Inicia el texto fuera del contenedor a la derecha */
+    }
+    100% {
+        left: -100%; /* Termina el texto fuera del contenedor a la izquierda */
+    }
+}
+
+
+
+/* Estilo para centrar la imagen principal */
+.main-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta la altura según tus preferencias */
+}
+
+/* Estilo para la imagen redondeada */
+.main-image {
+    width: 300px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: 300px;
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+}
+
+
+/* Estilos para el logo */
+.logo {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Alto de la imagen */
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+    position: absolute; /* Posición absoluta para colocarla en la esquina derecha */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    background-color: #fff; /* Fondo blanco para el logo circular */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+}
+
+.logo {
+    width: 60px; /* Ajusta el tamaño del logo según tus preferencias */
+    height: 60px;
+    border-radius: 50%; /* Hace que la imagen tenga forma circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+}
+/* Estilos para el encabezado */
+header {
+    position: relative; /* Establece una posición relativa para que el logo esté posicionado correctamente */
+}
+
+
+title {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+body {
+    background-image: url('mundo.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el viewport */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.image-chain {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.image-chain img {
+    margin: 10px; /* Agrega espacio entre las imágenes */
+}
+
+/* Estilo para las imágenes circulares */
+.circular-image {
+    width: 150px; /* Ajusta el tamaño de las imágenes circulares según tus preferencias */
+    height: 150px;
+    border-radius: 50%; /* Hace que las imágenes tengan forma circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+    margin: 5px; /* Espaciado entre las imágenes circulares */
+    float: left; /* Hace que las imágenes se alineen horizontalmente */
+}
+
+/* Estilo para las imágenes dentro de los círculos */
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el círculo */
+}
+
+/* Estilo para el GIF de Pulp Fiction */
+.john-gif {
+    width: 50px; /* Ajusta el ancho del GIF según tus preferencias */
+    height: 50px; /* Ajusta la altura del GIF según tus preferencias */
+    position: absolute; /* Permite posicionar el GIF de manera absoluta */
+    top: 50%; /* Ajusta la posición vertical del GIF según tus preferencias */
+    left: 50%; /* Ajusta la posición horizontal del GIF según tus preferencias */
+    transform: translate(-50%, -50%); /* Centra el GIF en el centro del contenedor */
+}
